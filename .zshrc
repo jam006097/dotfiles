@@ -12,3 +12,4 @@ setopt SHARE_HISTORY
 
 hash -d zenn=/home/jam00/work/zenn-content
 hash -d kp=~/work/kids-playground
+export PATH="$HOME/.cargo/bin:$PATH"
