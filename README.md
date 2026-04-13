@@ -15,3 +15,4 @@ Remove-Item C:\Users\jam00\.wezterm.lua
 ```powershell
 cmd /c mklink C:\Users\jam00\.wezterm.lua \\wsl$\Ubuntu\home\jam00\dotfiles\.wezterm.lua
 ```
+# test from Mac
