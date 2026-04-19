@@ -12,6 +12,7 @@ setopt SHARE_HISTORY
 hash -d zenn=~/work/zenn-content
 hash -d kp=~/work/kids-playground
 hash -d libe=~/work/libecity
+hash -d ab=~/work/absence-reporter
 
 # Rust
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -31,7 +32,7 @@ eval "$(fzf --zsh)"
 alias pm='python3 manage.py'
 
 # Homebrew (Apple Silicon)
-export PATH="/opt/homebrew/bin:$PATH"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Claude Code
 export PATH="$HOME/.local/bin:$PATH"
