@@ -24,8 +24,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
-# fzf (brew install fzf 後に有効)
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# fzf
+eval "$(fzf --zsh)"
 
 # Aliases
 alias pm='python3 manage.py'
