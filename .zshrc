@@ -7,6 +7,7 @@ zshaddhistory() {
 }
 setopt INC_APPEND_HISTORY
 setopt SHARE_HISTORY
+setopt HIST_IGNORE_ALL_DUPS
 
 # Named directories
 hash -d zenn=~/work/zenn-content
