@@ -37,3 +37,12 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Claude Code
 export PATH="$HOME/.local/bin:$PATH"
+eval "$(fnm env --use-on-cd)"
+
+# pnpm
+export PNPM_HOME="/Users/ik/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

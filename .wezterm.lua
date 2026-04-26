@@ -8,7 +8,7 @@ config.font_size = 14.0
 -- Appearance
 config.color_scheme = 'Tokyo Night'
 config.window_background_opacity = 0.7
-config.macos_window_background_blur = 20
+config.macos_window_background_blur = 0 
 
 -- Window
 config.window_decorations = 'RESIZE'
