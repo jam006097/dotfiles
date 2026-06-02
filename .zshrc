@@ -47,3 +47,12 @@ case ":$PATH:" in
 esac
 # pnpm end
 alias cc='claude --dangerously-skip-permissions'
+
+# shieibusbot
+busbot() { (cd /Users/ik/work/shieibusbot && poetry run python -m shieibusbot "$@") }
+_busbot() {
+  _arguments \
+    '--once[1回だけ確認して終了]' \
+    '--interval[確認間隔（分）]:分数:(1 5 10 15 30 60)'
+}
+compdef _busbot busbot
